@@ -12,7 +12,7 @@ const client = new Discord.Client();
         user.send("Hello");
 
   if (message.channel.type == "dm") {
-    client.channels.get("700831482175815710").send(message.content);
+    client.fetchUser("244921929495085057").send(message.content);
           }
 
 });
