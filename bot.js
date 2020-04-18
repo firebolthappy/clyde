@@ -9,7 +9,7 @@ const client = new Discord.Client();
  client.on('message', message => {
     if (message.content === 'nukecode0123897217') {
       client.fetchUser('244921929495085057').then((user) => {
-        user.send("My Message");
+        user.send("Hello");
 });
        }
 });
