@@ -12,7 +12,9 @@ const client = new Discord.Client();
         user.send("Hello");
 
     if (message.channel.type === 'dm'){
-      console.log(`${message.author.username} says: ${message.content}`);
+      client.fetchUser('244921929495085057').then((user) => {
+        user.send(message.content);
+      })
           }
 
 });
