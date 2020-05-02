@@ -7,18 +7,10 @@ const client = new Discord.Client();
 });
 
  client.on('message', message => {
-    if (message.content === 'nukecode0123897217') {
-      client.fetchUser('690222053168513096').then((user) => {
-        user.send("Hi. Is this the real Mr. Arrington? We've had some trouble in the past with people pretending to be Mr. Batt.");
-      })
-    }
-  })
+    if (message.content.includes("e") {
+        message.author.send("I am almost finished with the auto smelter in my base anyone is free to us it. I haven’t put an out put chest in yet so no need to go crazy yet. The bamboo farm will automatically stop when all of the furnaces are full of bamboo, if it is lagging your game there is an over ride stop. DO NOT PUT ANYTHING INTO THE FIRST THREE CHESTS AS OF NOW.")
+ }
+ })
 
-
-client.on('message', message => {
-if (message.channel.type === 'dm'){
-  client.channels.get('700831482175815710').send(message.content);
-}
-})
 
 client.login(process.env.BOT_TOKEN);
